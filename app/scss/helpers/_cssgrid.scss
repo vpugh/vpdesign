@@ -1,0 +1,27 @@
+.grid {
+    display: grid;
+}
+
+.grid--3col {
+    grid-template: 1fr / repeat(3, 1fr);
+
+    @include mq(tablet, max-width) {
+        grid-template: 1fr / 1fr;
+    }
+}
+
+.grid--2col {
+    grid-template: 1fr / repeat(2,1fr);
+
+    @include mq(tablet, max-width){
+        grid-template: 1fr / 1fr;
+    }
+}
+
+.grid-gap-15 {
+    grid-gap: 15px;
+}
+
+.grid-gap-30 {
+    grid-gap: 30px;
+}

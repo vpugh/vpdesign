@@ -1,0 +1,29 @@
+{% extends "layout.njk" %}
+
+{% block title %}
+Blog | Design, Development &amp; Consulting
+{% endblock %}
+
+{%- set activePage = "blog" -%}
+{%- set colorScheme = "dark" -%}
+
+{% block content %}
+<main {%if activePage != '' %}class="extraspace"{% endif %}>
+    <div class="container grid">
+        <div class="grid grid--2col grid-gap-30">
+            <div class="blog--posts"><a href="https://medium.com/@teekatwo/are-you-solving-the-real-problem-941a1c36c1d5" target="_blank"><div class="blog--cover lazyloaded" style="background-image: url(&quot;https://cdn-images-1.medium.com/max/1000/1*rYqxGE8b5_lxlvF4OoE_AA.jpeg&quot;);"></div></a> <div class="blog--text"><h2 class="blog--title"><a href="https://medium.com/@teekatwo/are-you-solving-the-real-problem-941a1c36c1d5" target="_blank">Are You Solving the Real Problem</a></h2> <p class="blog--subtitle">February 21, 2018 | Medium</p></div>
+            </div>
+
+            <div class="blog--posts"><a href="https://medium.com/@teekatwo/what-you-shouldnt-do-with-mailing-lists-91a52d89cc56" target="_blank"><div class="blog--cover lazyloaded" style="background-image: url(&quot;https://cdn-images-1.medium.com/max/2000/1*2Oo1Din32plTMdI8GypK4Q.jpeg&quot;);"></div></a> <div class="blog--text"><h2 class="blog--title"><a href="https://medium.com/@teekatwo/what-you-shouldnt-do-with-mailing-lists-91a52d89cc56" target="_blank">What You Shouldn’t do With Mailing Lists</a></h2> <p class="blog--subtitle">February 13, 2018 | Medium</p></div></div>
+
+            <div class="blog--posts"><a href="https://medium.com/@teekatwo/emails-arent-as-simple-as-you-think-987c6dfeb09e" target="_blank"><div class="blog--cover lazyloaded" style="background-image: url(&quot;https://cdn-images-1.medium.com/max/1000/1*fXBo56b0tanSCNHo4O2eWw.jpeg&quot;);"></div></a> <div class="blog--text"><h2 class="blog--title"><a href="https://medium.com/@teekatwo/emails-arent-as-simple-as-you-think-987c6dfeb09e" target="_blank">Emails aren’t as simple as you think</a></h2> <p class="blog--subtitle">January 17, 2018 | Medium</p></div></div>
+
+            <div class="blog--posts"><a href="https://medium.com/@teekatwo/using-social-media-to-your-advantage-446598468375" target="_blank"><div class="blog--cover lazyloaded" style="background-image: url(&quot;https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=6354c26fa366d6b456db1d7cf1137c89&amp;auto=format&amp;fit=crop&amp;w=1053&amp;q=80&quot;);"></div></a> <div class="blog--text"><h2 class="blog--title"><a href="https://medium.com/@teekatwo/using-social-media-to-your-advantage-446598468375" target="_blank">Using Social Media to Your Advantage</a></h2> <p class="blog--subtitle">December 18, 2017 | Medium</p></div></div>
+
+            <div class="blog--posts"><a href="https://medium.com/@teekatwo/how-to-explain-what-design-is-to-non-designers-72838fc12b09" target="_blank"><div class="blog--cover lazyloaded" style="background-image: url(&quot;https://images.unsplash.com/photo-1518893494013-481c1d8ed3fd?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=d37f41df10af558fe79a662a07c7de3f&amp;auto=format&amp;fit=crop&amp;w=400&amp;q=60&quot;);"></div></a> <div class="blog--text"><h2 class="blog--title"><a href="https://medium.com/@teekatwo/how-to-explain-what-design-is-to-non-designers-72838fc12b09" target="_blank">How to Explain What Design is to Non-Designers</a></h2> <p class="blog--subtitle">September 23, 2017 | Medium</p></div></div>
+
+            <div class="blog--posts"><a href="https://medium.com/@teekatwo/be-tron-fight-for-the-user-f96efc142876" target="_blank"><div class="blog--cover lazyloaded" style="background-image: url(&quot;https://cdn-images-1.medium.com/max/800/1*6CyTuYz0D92cl4ynXjW45A.jpeg&quot;);"></div></a> <div class="blog--text"><h2 class="blog--title"><a href="https://medium.com/@teekatwo/be-tron-fight-for-the-user-f96efc142876" target="_blank">Be Tron: Fight for the User | aka Be a User Advocate</a></h2> <p class="blog--subtitle">September 11, 2017 | Medium</p></div></div>
+        </div>
+    </div>
+</main>
+{% endblock %}

@@ -1,0 +1,41 @@
+.blog {
+    &--posts {
+        // display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px 0;
+        transition: .3s ease-in-out;
+
+        &:hover {
+            opacity: .75;
+        }
+
+        a {
+            color: color(text, base);
+        }
+    }
+
+    &--cover {
+        padding-bottom: 52.25%;
+        background-size: cover;
+        max-width: 100%;
+    }
+
+    &--text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-self: flex-start;
+        margin-top: 1.6rem;
+    }
+
+    &--title {
+        font-size: 1.6rem;
+        margin: 0 0 .5rem 0;
+    }
+
+    &--subtitle {
+        margin: 0;
+        color: color(text, light);
+        font-size: 1rem;
+    }
+}
