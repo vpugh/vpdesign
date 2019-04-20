@@ -4,23 +4,49 @@ const uglify = require('gulp-uglify');
 const browserSync = require('browser-sync');
 const sass = require('gulp-sass');
 const nunjucksRender = require('gulp-nunjucks-render');
+const plumber = require('gulp-plumber');
+const sourcemaps = require('gulp-sourcemaps');
+const notify = require('gulp-notify');
 
 const server = browserSync.create();
 
 const paths = {
   scripts: {
-    src: 'src/scripts/*.js',
-    dest: 'dist/scripts/'
+    src: 'app/js/**/*.js',
+    watchDest: 'app/js',
+    dest: 'dist/js'
   },
   app: 'app',
   scss: {
     src: 'app/scss/**/*.scss',
+    watchDest: 'app/css',
     dest: 'dist/css'
+  },
+  nunjucks: {
+    templates: 'app/templates',
+    pages: 'app/pages',
+    njk: 'app/pages/**/*.+(html|njk)'
   }
 };
 
+const onError = function (err) {
+  console.log(err);
+  this.emit('end');
+}
+
 function style() {
-  return gulp.src('app/scss/**/*.scss')
+  return gulp.src(paths.scss.src)
+    .pipe(plumber({
+      errorHandler: function(err) {
+          notify.onError({
+              title: "Sass Compile Error",
+              message: "<%= error.message %>",
+              sound: "beep"
+          })(err);
+          this.emit('end');
+        }
+    }))
+    .pipe(sourcemaps.init())
     .pipe(sass({
       includePaths: [
         'app/scss/base',
@@ -31,20 +57,30 @@ function style() {
         'app/scss/variables'
       ]
     }))
-    .pipe(gulp.dest('app/css'))
+    .pipe(gulp.dest(paths.scss.watchDest))
 }
 
 function nunjucks() {
-  return gulp.src('app/pages/**/*.+(html|njk)')
-  .pipe(nunjucksRender({path: ['app/templates']}))
-  .pipe(gulp.dest('app'))
+  return gulp.src(paths.nunjucks.njk)
+  .pipe(plumber({
+    errorHandler: function(err) {
+          notify.onError({
+              title: "Nunjucks Compile Error",
+    message: "<%= error.message %>",
+    sound: "beep"
+          })(err);
+          this.emit('end');
+      }
+  }))
+  .pipe(nunjucksRender({path: [paths.nunjucks.templates]}))
+  .pipe(gulp.dest(paths.app))
 }
 
 function scripts() {
   return gulp.src(paths.scripts.src, { sourcemaps: true })
     .pipe(uglify())
     .pipe(concat('index.min.js'))
-    .pipe(gulp.dest(paths.scripts.dest));
+    .pipe(gulp.dest(paths.scripts.watchDest));
 }
 
 function reload(done) {
@@ -55,27 +91,25 @@ function reload(done) {
 function serve(done) {
   server.init({
     server: {
-      baseDir: 'app'
+      baseDir: paths.app
     }
   });
   done();
 }
 
 function watchFiles() {
-  gulp.watch('app/scss/**/*.scss', style);
-  gulp.watch('app/pages/**/*.+(html|njk)', gulp.series(nunjucks));
+  gulp.watch(paths.scss.src, style);
+  gulp.watch(paths.nunjucks.njk, gulp.series(nunjucks));
   gulp.watch(
-    [
-      'app/templates',
-      'app/pages'
-    ],
+    [paths.nunjucks.templates, paths.nunjucks.pages],
     gulp.series(reload)
   );
+  gulp.watch(paths.scripts.src, gulp.series(scripts));
   // gulp.watch("./assets/img/**/*", images);
 }
 
 // const watch = () => gulp.watch(paths.scripts.src, gulp.series(style, nunjucks, scripts, reload));
 
-const dev = gulp.series(style, serve, nunjucks, watchFiles);
+const dev = gulp.series(style, serve, nunjucks, scripts, watchFiles);
 exports.default = dev;
-exports.watch = watchFiles;
+exports.watch = dev;
