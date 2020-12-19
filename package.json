@@ -16,15 +16,6 @@
     "url": "https://github.com/vpugh/vpdesign/issues"
   },
   "homepage": "https://github.com/vpugh/vpdesign#readme",
-  "devDependencies": {
-    "browser-sync": "^2.24.5",
-    "gulp": "^3.9.1",
-    "gulp-notify": "^3.2.0",
-    "gulp-nunjucks-render": "^2.2.2",
-    "gulp-plumber": "^1.2.0",
-    "gulp-sass": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-uglify": "^3.0.0",
-    "gulp-useref": "^3.1.5"
-  }
+  "devDependencies": {},
+  "dependencies": {}
 }
