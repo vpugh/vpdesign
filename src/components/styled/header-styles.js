@@ -23,8 +23,8 @@ export const Logo = styled(Link)`
     margin-bottom: 20px;
   }
   color: #fff;
+  font-family: 'Noto Serif', serif;
   text-decoration: none;
-  font-weight: bold;
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;

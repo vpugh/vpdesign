@@ -1,10 +1,12 @@
 import styled from 'styled-components';
+import { theme } from '../theme';
 
 export const BlogIndexContainer = styled.div`
   margin: 40px 0;
   text-align: center;
   padding-top: 2rem;
   .title {
+    color: ${theme.colors.darkGreen};
     font-size: 2rem;
     padding-bottom: 2rem;
   }

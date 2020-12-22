@@ -11,6 +11,7 @@ export const FooterContainer = styled.footer`
     align-items: center;
     justify-content: space-between;
     padding: 20px 40px;
+    font-size: 0.8rem;
     @media (max-width: 480px) {
       flex-direction: column-reverse;
     }
