@@ -4,6 +4,7 @@ import Jumbotron from '../components/jumbotron';
 import { Container } from '../components/styled/container-styled';
 import InfoCardGrid from '../components/index/info-card-grid';
 import HelpYouBlurb from '../components/index/help-you-blurb';
+import BlogPeek from '../components/index/blog-peek';
 
 export default function Home() {
   return (
@@ -16,17 +17,7 @@ export default function Home() {
       </Container>
       <HelpYouBlurb />
       <Container>
-        <div
-          style={{
-            margin: '40px 0',
-            textAlign: 'center',
-            fontSize: '2rem',
-            paddingTop: '2rem',
-          }}
-        >
-          <h2>Blog Posts</h2>
-          <p>Blog posts...</p>
-        </div>
+        <BlogPeek />
       </Container>
     </Layout>
   );

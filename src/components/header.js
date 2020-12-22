@@ -12,9 +12,9 @@ const Header = () => {
     <HeaderContainer>
       <Logo to='/'>VP—Designs</Logo>
       <NavContainer>
-        <HeaderLinks to='/work'>Work</HeaderLinks>
-        <HeaderLinks to='/about'>About</HeaderLinks>
         <HeaderLinks to='/services'>Services</HeaderLinks>
+        <HeaderLinks to='/portfolio'>Portfolio</HeaderLinks>
+        <HeaderLinks to='/about'>About</HeaderLinks>
         <HeaderLinks to='/blog'>Blog</HeaderLinks>
         <HeaderNormalLinks
           className='typeform-share link'

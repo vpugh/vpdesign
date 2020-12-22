@@ -17,7 +17,8 @@ export const BlurbContainer = styled.div`
   .title {
     color: ${darkGreen};
     margin-bottom: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 36px;
+    padding-top: 24px;
     font-size: 2rem;
   }
   .img-container {

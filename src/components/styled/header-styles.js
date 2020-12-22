@@ -12,6 +12,8 @@ export const HeaderContainer = styled.header`
   background: #043137;
   display: flex;
   justify-content: space-around;
+  font-size: 14px;
+  text-transform: uppercase;
   align-items: center;
   padding: 20px 0;
 `;
@@ -23,6 +25,7 @@ export const Logo = styled(Link)`
   color: #fff;
   text-decoration: none;
   font-weight: bold;
+  font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
   ${transition}
@@ -35,20 +38,20 @@ export const NavContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   width: 80%;
+  align-items: center;
   @media (min-width: 1024px) {
-    width: 500px;
+    width: 550px;
   }
 `;
 
 export const HeaderLinks = styled(Link)`
   color: #fff;
   text-decoration: none;
-  /* margin-right: 30px; */
   border-bottom: 1px solid transparent;
+  letter-spacing: 2px;
   ${transition}
   &:hover {
     opacity: 0.5;
-    border-bottom: 1px solid;
   }
 `;
 
@@ -59,9 +62,8 @@ export const HeaderNormalLinks = styled.a`
   color: #000;
   background: #fea400;
   text-decoration: none;
-  padding: 2px 19px;
-  border-radius: 14px;
-  font-weight: bold;
+  padding: 6px 19px;
+  letter-spacing: 1px;
   ${transition}
   &:hover {
     background: #fbbc49;

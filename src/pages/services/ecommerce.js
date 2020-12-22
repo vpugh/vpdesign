@@ -5,7 +5,7 @@ import { Container } from '../../components/styled/container-styled';
 const Ecommerce = () => {
   return (
     <Layout>
-      <Container hasMargin={true}>
+      <Container hasMargin>
         <h2>Package - Ecommerce</h2>
         <p>Placeholder Text</p>
       </Container>

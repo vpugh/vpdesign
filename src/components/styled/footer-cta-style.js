@@ -9,8 +9,9 @@ export const CTAContainer = styled.div`
   .cta-title {
     color: #ffaa01;
     margin-bottom: 0.85rem;
+    font-size: 2rem;
     @media (min-width: 1024px) {
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
   }
   .cta-content {
@@ -19,11 +20,19 @@ export const CTAContainer = styled.div`
       max-width: 60%;
     }
   }
+  a {
+    font-size: 16px;
+    border: 1px solid ${theme.colors.gold};
+    background: transparent;
+    color: #fff;
+  }
   .cta-button {
     background: ${theme.colors.gold};
     margin-top: 1rem;
     border: none;
     padding: 4px 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     @media (max-width: 480px) {
       width: 100%;
       padding-top: 8px;

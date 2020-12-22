@@ -17,7 +17,7 @@ const InfoCardGrid = () => {
           have a presence online. Something customers can find and happily start
           using.
         </p>
-        <Link to='/package/simple-site'>View Simple Details</Link>
+        <Link to='/services/simple-site'>View Simple Details</Link>
       </HeroCard>
       <HeroCard>
         <h3>Blog</h3>
@@ -25,7 +25,7 @@ const InfoCardGrid = () => {
           Mostly content focused, otherwise known as blogging. This is coming up
           with a design that best suits your blogging needs.
         </p>
-        <Link to='/package/blog'>View Blog Details</Link>
+        <Link to='/services/blog'>View Blog Details</Link>
       </HeroCard>
       <HeroCard>
         <h3>Ecommerce</h3>
@@ -33,7 +33,7 @@ const InfoCardGrid = () => {
           This package is for people who sell products and are looking to move
           that process online.
         </p>
-        <Link to='/package/ecommerce'>View Ecommerce Details</Link>
+        <Link to='/services/ecommerce'>View Ecommerce Details</Link>
       </HeroCard>
       <HeroCard>
         <h3>Something Custom</h3>
@@ -41,7 +41,7 @@ const InfoCardGrid = () => {
           None of these packages solve the problem your having? Reach out and
           we’ll see what we can make for you.
         </p>
-        <Link to='/package/fully-custom'>See What We Can Do</Link>
+        <Link to='/services/fully-custom'>See What We Can Do</Link>
       </HeroCard>
     </GridContainer>
   );

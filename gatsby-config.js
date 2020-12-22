@@ -5,24 +5,6 @@ module.exports = {
     twitterUsername: '@vpdstudios',
     description: `Studio invested in bring all business owners into the digital age. We give you the site and tools you need to grow in the digital space.`,
     author: `@gatsbyjs`,
-    menuLinks: [
-      {
-        label: 'Work',
-        link: '/work',
-      },
-      {
-        label: 'About',
-        link: '/about',
-      },
-      {
-        label: 'Contact',
-        link: '/contact',
-      },
-      {
-        label: 'Writing',
-        link: '/blog',
-      },
-    ],
   },
   plugins: [
     `gatsby-plugin-styled-components`,

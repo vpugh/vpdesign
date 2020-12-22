@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container } from './styled/container-styled';
 import { CTAContainer } from './styled/footer-cta-style';
+import { RegularButton } from './styled/button-styles';
 
 const FooterCTA = () => {
   return (
@@ -13,7 +14,9 @@ const FooterCTA = () => {
             we've probably got an answer. Reach out and let us know how we can
             help.
           </p>
-          <button className='cta-button'>Ask away</button>
+          <RegularButton marginTop={'1rem'} isBold>
+            Contact Us
+          </RegularButton>
         </div>
         {/* <div
           style={{
@@ -24,6 +27,7 @@ const FooterCTA = () => {
           }}
         >
           <h3>Sign up for newsletter</h3>
+          <p>For the latest updates, marketing tips, industry insight and much more.</p>
           <div>
             <input
               style={{ padding: '4px 10px', border: 'none', margin: '0 5px' }}

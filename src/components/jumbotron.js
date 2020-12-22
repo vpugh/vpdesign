@@ -1,6 +1,7 @@
 import React from 'react';
 import { JumbotronStyled } from './styled/jumbotron';
 import { Link } from 'gatsby';
+import { RegularButton } from './styled/button-styles';
 
 const Jumbotron = () => {
   return (
@@ -14,9 +15,10 @@ const Jumbotron = () => {
           lot of questions, What do I need on it?, What results do I want?, How
           do I get started? We’re here to help you figure that out.
         </p>
-        <Link className='cta-button' to='/fyf'>
+        <RegularButton marginTop={'2rem'}>Learn More</RegularButton>
+        {/* <Link className='cta-button' to='/fyf'>
           What do you need
-        </Link>
+        </Link> */}
       </div>
     </JumbotronStyled>
   );
