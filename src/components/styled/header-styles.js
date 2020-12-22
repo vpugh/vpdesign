@@ -6,7 +6,7 @@ const transition = css`
 `;
 
 export const HeaderContainer = styled.header`
-  @media (max-width: 420px) {
+  @media (max-width: 480px) {
     flex-direction: column;
   }
   background: #043137;
@@ -19,7 +19,7 @@ export const HeaderContainer = styled.header`
 `;
 
 export const Logo = styled(Link)`
-  @media (max-width: 420px) {
+  @media (max-width: 480px) {
     margin-bottom: 20px;
   }
   color: #fff;
@@ -39,6 +39,9 @@ export const NavContainer = styled.nav`
   justify-content: space-between;
   width: 80%;
   align-items: center;
+  @media (min-width: 768px) {
+    width: 60%;
+  }
   @media (min-width: 1024px) {
     width: 550px;
   }
@@ -56,7 +59,7 @@ export const HeaderLinks = styled(Link)`
 `;
 
 export const HeaderNormalLinks = styled.a`
-  @media (max-width: 420px) {
+  @media (max-width: 480px) {
     display: none;
   }
   color: #000;

@@ -20,7 +20,7 @@ export const JumbotronStyled = styled.div`
     opacity: 0.3;
   }
   .container {
-    @media (min-width: 420px) {
+    @media (min-width: 480px) {
       width: 90%;
     }
     @media (min-width: 1024px) {

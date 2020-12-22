@@ -1,4 +1,5 @@
 import React from 'react';
+import { BlogIndexContainer } from '../styled/blog-peek-styles';
 
 const fakeBlogData = [
   {
@@ -39,21 +40,9 @@ const fakeBlogData = [
 
 const BlogPeek = () => {
   return (
-    <div
-      style={{
-        margin: '40px 0',
-        textAlign: 'center',
-        paddingTop: '2rem',
-      }}
-    >
-      <h2 style={{ fontSize: '2rem', paddingBottom: '2rem' }}>From Our Blog</h2>
-      <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          gridGap: '20px 40px',
-        }}
-      >
+    <BlogIndexContainer>
+      <h2 className='title'>From Our Blog</h2>
+      <div className='gridContainer'>
         {fakeBlogData.map((bd) => (
           <div key={bd.key} style={{ textAlign: 'left' }}>
             <h3 style={{ marginBottom: '.75rem', fontSize: 24 }}>{bd.title}</h3>
@@ -64,7 +53,7 @@ const BlogPeek = () => {
           </div>
         ))}
       </div>
-    </div>
+    </BlogIndexContainer>
   );
 };
 

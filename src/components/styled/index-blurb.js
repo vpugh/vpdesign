@@ -10,7 +10,7 @@ export const BlurbContainer = styled.div`
   margin: 20px 0;
   .container {
     display: flex;
-    @media (max-width: 420px) {
+    @media (max-width: 768px) {
       flex-direction: column;
     }
   }
