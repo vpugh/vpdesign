@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import { theme } from '../theme';
 
-const darkGreen = theme.colors.darkGreen;
-
 export const GridContainer = styled.div`
   display: grid;
   grid-gap: 0 20px;
@@ -19,7 +17,7 @@ export const GridTitle = styled.h2`
   text-align: center;
   font-size: 2rem;
   padding-top: 2rem;
-  color: ${darkGreen};
+  color: ${theme.colors.darkGreen};
 `;
 
 export const HeroCard = styled.div`

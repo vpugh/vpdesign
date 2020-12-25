@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import { theme } from '../theme';
 
-const darkGreen = theme.colors.darkGreen;
-
 export const BlurbContainer = styled.div`
   background: #aecaaf;
   width: 100%;
@@ -15,7 +13,7 @@ export const BlurbContainer = styled.div`
     }
   }
   .title {
-    color: ${darkGreen};
+    color: ${theme.colors.darkGreen};
     margin-bottom: 20px;
     padding-bottom: 36px;
     padding-top: 24px;
