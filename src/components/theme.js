@@ -1,11 +1,11 @@
 export const theme = {
   colors: {
-    lightGreen: '#663399',
-    darkGreen: '#033137',
-    lightLightGreen: '#086e7b',
-    superLightGreen: '#04525d',
-    borderGreen: '#03272d',
-    gold: '#ffaa01',
+    baseGreen1: '#043137',
+    baseGreen2: '#1d464b',
+    lightGreen: '#688387',
+    paleGreen: '#b4c1c3',
+    baseGreenBorder: '#1d464b',
+    baseGold: '#ffaa01',
   },
   breakpoints: {
     xs: '320px',

@@ -14,7 +14,11 @@ const FooterCTA = () => {
             we've probably got an answer. Reach out and let us know how we can
             help.
           </p>
-          <RegularButton marginTop={'1rem'} isBold>
+          <RegularButton
+            href='https://tori83.typeform.com/to/b6gima'
+            hasmargintop={'1rem'}
+            isBold
+          >
             Contact Us
           </RegularButton>
         </div>

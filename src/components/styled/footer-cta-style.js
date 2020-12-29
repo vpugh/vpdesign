@@ -3,15 +3,16 @@ import { theme } from '../theme';
 
 export const CTAContainer = styled.div`
   width: 100%;
-  background: ${theme.colors.darkGreen};
-  border-bottom: 1px solid ${theme.colors.borderGreen};
+  background: ${theme.colors.baseGreen1};
+  border-bottom: 1px solid ${theme.colors.baseGreenBorder};
   color: #fff;
   .cta-title {
     color: #ffaa01;
     margin-bottom: 0.85rem;
     font-size: 2rem;
     @media (min-width: 1024px) {
-      margin-bottom: 1rem;
+      font-size: 3rem;
+      margin-bottom: 2rem;
     }
   }
   .cta-content {
@@ -22,12 +23,12 @@ export const CTAContainer = styled.div`
   }
   a {
     font-size: 16px;
-    border: 1px solid ${theme.colors.gold};
+    border: 1px solid ${theme.colors.baseGold};
     background: transparent;
     color: #fff;
   }
   .cta-button {
-    background: ${theme.colors.gold};
+    background: ${theme.colors.baseGold};
     margin-top: 1rem;
     border: none;
     padding: 4px 22px;

@@ -2,10 +2,10 @@ import styled from 'styled-components';
 import { theme } from '../theme';
 
 export const FooterContainer = styled.footer`
-  background: ${theme.colors.darkGreen};
+  background: ${theme.colors.baseGreen1};
   margin: 0;
   padding: 0;
-  color: ${theme.colors.lightLightGreen};
+  color: ${theme.colors.lightGreen};
   .flex-container {
     display: flex;
     align-items: center;
@@ -18,7 +18,6 @@ export const FooterContainer = styled.footer`
   }
   .copyright {
     font-size: 0.8rem;
-    color: ${theme.colors.superLightGreen};
   }
   .social-container {
     @media (max-width: 480px) {
@@ -26,7 +25,7 @@ export const FooterContainer = styled.footer`
     }
   }
   .social-link {
-    color: ${theme.colors.lightLightGreen};
+    color: ${theme.colors.lightGreen};
     margin-left: 10px;
     text-decoration: none;
     &:hover {

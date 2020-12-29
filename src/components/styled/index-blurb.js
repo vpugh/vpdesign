@@ -3,6 +3,7 @@ import { theme } from '../theme';
 
 export const BlurbContainer = styled.div`
   background: #aecaaf;
+  background: ${theme.colors.baseGreen2};
   width: 100%;
   padding: 30px 0 10px 0;
   margin: 20px 0;
@@ -13,7 +14,7 @@ export const BlurbContainer = styled.div`
     }
   }
   .title {
-    color: ${theme.colors.darkGreen};
+    color: ${theme.colors.baseGold};
     margin-bottom: 20px;
     padding-bottom: 36px;
     padding-top: 24px;
@@ -27,8 +28,10 @@ export const BlurbContainer = styled.div`
   }
   .text-container {
     text-align: left;
+    font-size: 0.9rem;
+    color: ${theme.colors.paleGreen};
     @media (min-width: 1024px) {
-      width: 480px;
+      width: 420px;
       margin-left: 100px;
     }
   }

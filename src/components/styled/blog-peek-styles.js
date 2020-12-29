@@ -6,7 +6,7 @@ export const BlogIndexContainer = styled.div`
   text-align: center;
   padding-top: 2rem;
   .title {
-    color: ${theme.colors.darkGreen};
+    color: ${theme.colors.baseGreen1};
     font-size: 2rem;
     padding-bottom: 2rem;
   }
