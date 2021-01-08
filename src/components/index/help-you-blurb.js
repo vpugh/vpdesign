@@ -16,9 +16,8 @@ const HelpYouBlurb = () => {
             <div className='img-container'>
               <img
                 style={{ width: '100%' }}
-                // src='https://toripugh.com/images/pic.jpg'
-                src='/static/Stock-Office.jpg'
-                alt='profile pic'
+                src='./Stock-Office.jpg'
+                alt='stock office'
               />
             </div>
             <div className='text-container'>
