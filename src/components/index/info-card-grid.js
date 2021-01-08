@@ -5,45 +5,31 @@ import {
   GridTitle,
   HeroCard,
 } from '../../components/styled/info-cards';
+import { Container } from '../styled/container-styled';
+import projectTypes from '../../data/project-types';
+import { TextTitle } from '../styled/text-header-styles';
+import { theme } from '../theme';
 
 const InfoCardGrid = () => {
   return (
-    <GridContainer>
-      <GridTitle>Web Design &amp; Development</GridTitle>
-      <HeroCard>
-        <h3>Simple Website</h3>
-        <p>
-          This would be the bare minimum necessary to get up and running and
-          have a presence online. Something customers can find and happily start
-          using.
-        </p>
-        <Link to='/services/simple-site'>View Simple Details</Link>
-      </HeroCard>
-      <HeroCard>
-        <h3>Blog</h3>
-        <p>
-          Mostly content focused, otherwise known as blogging. This is coming up
-          with a design that best suits your blogging needs.
-        </p>
-        <Link to='/services/blog'>View Blog Details</Link>
-      </HeroCard>
-      <HeroCard>
-        <h3>Ecommerce</h3>
-        <p>
-          This package is for people who sell products and are looking to move
-          that process online.
-        </p>
-        <Link to='/services/ecommerce'>View Ecommerce Details</Link>
-      </HeroCard>
-      <HeroCard>
-        <h3>Something Custom</h3>
-        <p>
-          None of these packages solve the problem your having? Reach out and
-          we’ll see what we can make for you.
-        </p>
-        <Link to='/services/fully-custom'>See What We Can Do</Link>
-      </HeroCard>
-    </GridContainer>
+    <div style={{ background: '#b4c1c3' }}>
+      <Container>
+        <GridContainer>
+          <GridTitle>
+            <TextTitle textColor={theme.colors.baseGreen1}>
+              What we can do for you
+            </TextTitle>
+          </GridTitle>
+          {projectTypes.map((pt) => (
+            <HeroCard key={pt.title}>
+              <h3>{pt.title}</h3>
+              <p>{pt.description}</p>
+              <Link to={pt.to}>{pt.linkText}</Link>
+            </HeroCard>
+          ))}
+        </GridContainer>
+      </Container>
+    </div>
   );
 };
 

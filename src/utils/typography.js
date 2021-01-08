@@ -2,9 +2,9 @@ import Typography from 'typography';
 
 const typography = new Typography({
   baseFontSize: '18px',
-  baseLineHeight: 1.666,
+  baseLineHeight: 1.4,
   headerFontFamily: [
-    'Noto Serif',
+    'Atiza',
     'Helvetica Neue',
     'Segoe UI',
     'Helvetica',
@@ -13,7 +13,7 @@ const typography = new Typography({
   ],
   fontDisplay: 'swap',
   bodyFontFamily: [
-    'Noto Sans',
+    'Calluna Sans',
     'Helvetica Neue',
     'Segoe UI',
     'Helvetica',

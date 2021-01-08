@@ -1,5 +1,8 @@
 import React from 'react';
 import { BlogIndexContainer } from '../styled/blog-peek-styles';
+import { Container } from '../styled/container-styled';
+import { theme } from '../theme';
+import { TextTitle } from '../styled/text-header-styles';
 
 const fakeBlogData = [
   {
@@ -40,20 +43,36 @@ const fakeBlogData = [
 
 const BlogPeek = () => {
   return (
-    <BlogIndexContainer>
-      <h2 className='title'>From Our Blog</h2>
-      <div className='gridContainer'>
-        {fakeBlogData.map((bd) => (
-          <div key={bd.key} style={{ textAlign: 'left' }}>
-            <h3 style={{ marginBottom: '.75rem', fontSize: 24 }}>{bd.title}</h3>
-            {bd.date && (
-              <p style={{ marginBottom: '.25rem', fontSize: 18 }}>{bd.date}</p>
-            )}
-            <p>{bd.description}</p>
+    <div>
+      <Container>
+        <BlogIndexContainer>
+          <TextTitle textColor={theme.colors.baseGreen1}>
+            From Our Blog
+          </TextTitle>
+          <div className='gridContainer'>
+            {fakeBlogData.map((bd) => (
+              <div
+                key={bd.key}
+                style={{
+                  textAlign: 'left',
+                  color: theme.colors.paleLightGreen,
+                }}
+              >
+                <h3 style={{ marginBottom: '.75rem', fontSize: 24 }}>
+                  {bd.title}
+                </h3>
+                {bd.date && (
+                  <p style={{ marginBottom: '.25rem', fontSize: 18 }}>
+                    {bd.date}
+                  </p>
+                )}
+                <p style={{ fontSize: '1.112rem' }}>{bd.description}</p>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-    </BlogIndexContainer>
+        </BlogIndexContainer>
+      </Container>
+    </div>
   );
 };
 

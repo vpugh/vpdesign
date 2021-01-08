@@ -17,6 +17,7 @@ export const CTAContainer = styled.div`
   }
   .cta-content {
     margin: 0 auto;
+    font-size: 1.112rem;
     @media (min-width: 1024px) {
       max-width: 60%;
     }

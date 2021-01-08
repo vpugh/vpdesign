@@ -23,8 +23,9 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
-        google: {
-          families: ['Noto Serif', 'Noto Sans'],
+        custom: {
+          families: ['Atiza', 'Calluna Sans'],
+          urls: ['/fonts/fonts.css'],
         },
       },
     },

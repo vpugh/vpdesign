@@ -23,7 +23,7 @@ const Header = () => {
           rel='noreferrer'
           target='_blank'
         >
-          Work With Us
+          Let's Talk
         </HeaderNormalLinks>
       </NavContainer>
     </HeaderContainer>

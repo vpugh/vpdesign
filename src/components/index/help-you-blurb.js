@@ -1,18 +1,23 @@
 import React from 'react';
 import { Container } from '../../components/styled/container-styled';
 import { BlurbContainer } from '../styled/index-blurb';
+import { TextTitle } from '../styled/text-header-styles';
+import { theme } from '../theme';
 
 const HelpYouBlurb = () => {
   return (
     <BlurbContainer>
       <Container>
-        <div style={{ textAlign: 'center' }}>
-          <h2 className='title'>How we help you</h2>
+        <div>
+          <TextTitle textColor={theme.colors.paleLightGreen}>
+            How we help you
+          </TextTitle>
           <div className='container'>
             <div className='img-container'>
               <img
                 style={{ width: '100%' }}
-                src='https://toripugh.com/images/pic.jpg'
+                // src='https://toripugh.com/images/pic.jpg'
+                src='/static/Stock-Office.jpg'
                 alt='profile pic'
               />
             </div>

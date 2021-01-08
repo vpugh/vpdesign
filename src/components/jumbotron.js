@@ -4,21 +4,25 @@ import { LinkButton } from './styled/button-styles';
 
 const Jumbotron = () => {
   return (
-    <JumbotronStyled>
-      <div className='container'>
-        <h2 className='title'>
-          Take the fear and mystery out of taking your business online.
-        </h2>
-        <p className='subtitle'>
-          In today’s world a website is a necessity. This can be followed by a
-          lot of questions, What do I need on it?, What results do I want?, How
-          do I get started? We’re here to help you figure that out.
-        </p>
-        <LinkButton hasmargintop='2rem' to='/services'>
-          Learn More
-        </LinkButton>
-      </div>
-    </JumbotronStyled>
+    <div style={{ position: 'relative' }}>
+      <JumbotronStyled>
+        <div className='container'>
+          <h2 className='title'>
+            Helping to take the fear and mystery out of bringing your business
+            online.
+          </h2>
+          <p className='subtitle'>
+            In today's world having a website is a necessity. Having an easy to
+            use site that converts customers is even more important. You have a
+            short window to get and keep their attention.
+          </p>
+          <LinkButton hasmargintop='2rem' to='/services'>
+            {/* Plan a Project */}
+            Get Started
+          </LinkButton>
+        </div>
+      </JumbotronStyled>
+    </div>
   );
 };
 

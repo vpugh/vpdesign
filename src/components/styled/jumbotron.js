@@ -38,7 +38,7 @@ export const JumbotronStyled = styled.div`
   .title {
     color: #fff;
     line-height: 1.2;
-    font-family: 'Noto Serif';
+    font-family: 'Atiza';
     margin-left: auto;
     margin-right: auto;
     max-width: 80%;
@@ -47,17 +47,23 @@ export const JumbotronStyled = styled.div`
       font-size: 2.7rem;
       margin-bottom: 4vh;
       margin-bottom: 2rem;
+      line-height: 1.4;
     }
   }
   .subtitle {
     color: #fff;
     max-width: 72%;
     margin: 0 auto;
+    @media (min-width: 1024px) {
+      /* font-size: 20px; */
+      font-size: 1.223rem;
+      line-height: 32px;
+    }
   }
   a {
-    font-size: 0.9rem;
     font-weight: bold;
     padding-left: 32px;
     padding-right: 32px;
+    letter-spacing: 1px;
   }
 `;

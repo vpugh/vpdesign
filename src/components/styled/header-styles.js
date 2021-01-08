@@ -23,11 +23,11 @@ export const Logo = styled(Link)`
     margin-bottom: 20px;
   }
   color: #fff;
-  font-family: 'Noto Serif', serif;
+  font-family: 'Atiza', serif;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 22px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 4px;
   ${transition}
   &:hover {
     opacity: 0.75;
@@ -66,7 +66,7 @@ export const HeaderNormalLinks = styled.a`
   background: #fea400;
   text-decoration: none;
   padding: 6px 19px;
-  letter-spacing: 1px;
+  font-weight: bold;
   ${transition}
   &:hover {
     background: #fbbc49;

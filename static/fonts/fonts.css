@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Atiza";
+  font-weight: 200;
+  src: url("AtizaText-Regular.otf");
+}
+
+@font-face {
+  font-family: "Atiza";
+  font-weight: 600;
+  src: url("AtizaText-Bold.otf");
+}
+
+@font-face {
+  font-family: "Atiza";
+  font-style: italic;
+  src: url("AtizaText-RegularItalic.otf")
+}
+
+@font-face {
+  font-family: "Calluna Sans";
+  src: url("CallunaSansRegular.otf")
+}

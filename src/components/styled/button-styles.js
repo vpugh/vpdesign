@@ -11,7 +11,7 @@ export const RegularButton = styled.a`
   margin-top: ${(props) => props.hasmargintop};
   background: ${theme.colors.baseGold};
   text-decoration: none;
-  padding: 6px 19px;
+  padding: 12px 19px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   display: inline-block;
@@ -28,7 +28,7 @@ export const LinkButton = styled(Link)`
   margin-top: ${(props) => props.hasmargintop};
   background: ${theme.colors.baseGold};
   text-decoration: none;
-  padding: 6px 19px;
+  padding: 12px 19px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   display: inline-block;

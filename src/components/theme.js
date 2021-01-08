@@ -4,8 +4,11 @@ export const theme = {
     baseGreen2: '#1d464b',
     lightGreen: '#688387',
     paleGreen: '#b4c1c3',
+    paleLightGreen: '#363a3a',
     baseGreenBorder: '#1d464b',
     baseGold: '#ffaa01',
+    paleGold: '#ffca60',
+    black: '#232323',
   },
   breakpoints: {
     xs: '320px',

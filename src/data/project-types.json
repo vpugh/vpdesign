@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Simple Website",
+    "description": "This would be the bare minimum necessary to get up and running and have a presence online. Something customers can find and happily start using.",
+    "to": "/services/simple-site",
+    "linkText": "Basic Website Details"
+  },
+  {
+    "title": "Blog",
+    "description": "Mostly content focused, otherwise known as blogging. This is coming up with a design that best suits your blogging needs.",
+    "to": "/services/blog",
+    "linkText": "Blog Details"
+  },
+  {
+    "title": "Ecommerce",
+    "description": "If your looking to sell products or services then this is a starting point for you. A good choice if your looking to move that process online.",
+    "to": "/services/ecommerce",
+    "linkText": "Ecommerce Details"
+  },
+  {
+    "title": "Something Custom",
+    "description": "Got something more specialized in mind? Want something kind of like these other options? No problem, reach out and we’ll see what we can do.",
+    "to": "/services/fully-custom",
+    "linkText": "See What We Can Do"
+  }
+]
