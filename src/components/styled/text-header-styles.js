@@ -24,3 +24,17 @@ export const TitleSubtext = styled.p`
     font-size: 1.25rem;
   }
 `;
+
+export const ImpactTitle = styled.div`
+  background: ${({ bgColor }) => bgColor || null};
+  padding: 40px 0;
+  @media (min-width: 1024px) {
+    padding: 100px 0;
+  }
+  p {
+    @media (min-width: 1024px) {
+      max-width: 65%;
+      font-size: 1.112rem;
+    }
+  }
+`;

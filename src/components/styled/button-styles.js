@@ -24,7 +24,7 @@ export const RegularButton = styled.a`
 `;
 
 export const LinkButton = styled(Link)`
-  color: #000;
+  color: ${theme.colors.black};
   margin-top: ${(props) => props.hasmargintop};
   background: ${theme.colors.baseGold};
   text-decoration: none;
@@ -37,5 +37,14 @@ export const LinkButton = styled(Link)`
   &:hover {
     background: #fbbc49;
     cursor: pointer;
+  }
+`;
+
+export const TextLinkButton = styled(Link)`
+  color: ${theme.colors.black};
+  transition: 0.3s ease-in-out;
+  margin: 0;
+  &:hover {
+    opacity: 0.5;
   }
 `;
