@@ -6,7 +6,8 @@ export const BlurbContainer = styled.div`
   width: 100%;
   padding: 20px 0 30px 0;
   @media (min-width: 1024px) {
-    padding-top: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
   .container {
     display: flex;
@@ -24,20 +25,23 @@ export const BlurbContainer = styled.div`
     height: 250px;
     @media (min-width: 1024px) {
       width: 580px;
-      height: 350px;
+      height: 610px;
     }
     overflow: hidden;
     margin-bottom: 30px;
   }
   .text-container {
     text-align: left;
-    font-size: 1.112rem;
-    line-height: 28px;
+    font-size: 1.3rem;
+    line-height: 1.4;
     color: ${theme.colors.paleLightGreen};
     font-weight: 600;
     @media (min-width: 1024px) {
       width: 420px;
       margin-right: 100px;
+    }
+    a {
+      color: inherit;
     }
   }
 `;

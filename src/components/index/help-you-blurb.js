@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import React from 'react';
 import { Container } from '../../components/styled/container-styled';
 import { BlurbContainer } from '../styled/index-blurb';
@@ -9,18 +10,18 @@ const HelpYouBlurb = () => {
     <BlurbContainer>
       <Container>
         <div>
-          <TextTitle textColor={theme.colors.paleLightGreen}>
-            How we help you
-          </TextTitle>
           <div className='container'>
             <div className='img-container'>
               <img
                 style={{ width: '100%' }}
-                src='./Stock-Office.jpg'
+                src='./about-desk.jpg'
                 alt='stock office'
               />
             </div>
             <div className='text-container'>
+              <TextTitle textColor={theme.colors.paleLightGreen}>
+                How we help you
+              </TextTitle>
               <p>
                 Having an online presence is crucial, it's the first encounter
                 customers may have with your business. You have only a few
@@ -35,6 +36,7 @@ const HelpYouBlurb = () => {
                 as is dictated by need or budget. Starting simple and then
                 getting more complex is never a bad idea.
               </p>
+              <Link to='/about'>Know More</Link>
             </div>
           </div>
         </div>

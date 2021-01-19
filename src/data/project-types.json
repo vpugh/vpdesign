@@ -16,11 +16,5 @@
     "description": "If your looking to sell products or services then this is a starting point for you. A good choice if your looking to move that process online.",
     "to": "/services/ecommerce",
     "linkText": "Ecommerce Details"
-  },
-  {
-    "title": "Something Custom",
-    "description": "Got something more specialized in mind? Want something kind of like these other options? No problem, reach out and we’ll see what we can do.",
-    "to": "/services/fully-custom",
-    "linkText": "See What We Can Do"
   }
 ]

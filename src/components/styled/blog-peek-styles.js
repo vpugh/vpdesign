@@ -1,15 +1,17 @@
 import styled from 'styled-components';
 
 export const BlogIndexContainer = styled.div`
-  /* margin: 40px 0; */
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @media (min-width: 1024px) {
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
   .gridContainer {
     display: grid;
     grid-gap: 20px 40px;
     @media (min-width: 1024px) {
       grid-template-columns: 1fr 1fr;
-      margin-top: 80px;
     }
   }
 `;

@@ -15,7 +15,7 @@ export const HeaderContainer = styled.header`
   font-size: 14px;
   text-transform: uppercase;
   align-items: center;
-  padding: 20px 0;
+  padding: 30px 0 0 0;
 `;
 
 export const Logo = styled(Link)`
