@@ -4,7 +4,7 @@ export const JumbotronStyled = styled.div`
   padding: 4rem 0;
   @media (min-width: 1024px) {
     padding-bottom: 4rem;
-    padding-top: 6rem;
+    padding-top: 5rem;
   }
   .container {
     @media (min-width: 480px) {

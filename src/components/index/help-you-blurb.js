@@ -1,6 +1,6 @@
-import { Link } from 'gatsby';
 import React from 'react';
 import { Container } from '../../components/styled/container-styled';
+import { LinkButton } from '../styled/button-styles';
 import { BlurbContainer } from '../styled/index-blurb';
 import { TextTitle } from '../styled/text-header-styles';
 import { theme } from '../theme';
@@ -36,7 +36,10 @@ const HelpYouBlurb = () => {
                 as is dictated by need or budget. Starting simple and then
                 getting more complex is never a bad idea.
               </p>
-              <Link to='/about'>Know More</Link>
+              <LinkButton hasmargintop='0.5rem' to='/about'>
+                Get to Know Us
+              </LinkButton>
+              {/* <Link to='/about'>Know More</Link> */}
             </div>
           </div>
         </div>

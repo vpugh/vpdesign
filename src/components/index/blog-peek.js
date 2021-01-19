@@ -47,12 +47,6 @@ const fakeBlogData = [
   },
 ];
 
-const orderedBlogData = fakeBlogData.sort(
-  (a, b) => new Date(a.IsoDate) - new Date(b.IsoDate)
-);
-
-console.log(orderedBlogData, fakeBlogData);
-
 const BlogPeek = () => {
   return (
     <div style={{ background: theme.colors.paleGreen }}>

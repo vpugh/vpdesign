@@ -4,7 +4,8 @@ import { theme } from '../theme';
 export const BlurbContainer = styled.div`
   background: ${theme.colors.paleGold};
   width: 100%;
-  padding: 20px 0 30px 0;
+  padding-top: 40px;
+  padding-bottom: 60px;
   @media (min-width: 1024px) {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -25,7 +26,7 @@ export const BlurbContainer = styled.div`
     height: 250px;
     @media (min-width: 1024px) {
       width: 580px;
-      height: 610px;
+      height: 710px;
     }
     overflow: hidden;
     margin-bottom: 30px;
@@ -42,6 +43,7 @@ export const BlurbContainer = styled.div`
     }
     a {
       color: inherit;
+      font-size: 1.1rem;
     }
   }
 `;
