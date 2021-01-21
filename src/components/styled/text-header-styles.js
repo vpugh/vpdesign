@@ -15,7 +15,8 @@ export const TextTitle = styled.h2`
 
 export const LargeTitle = styled.h2`
   @media (min-width: 1024px) {
-    font-size: 3rem;
+    font-size: 2.4rem;
+    line-height: 1.2;
   }
 `;
 
