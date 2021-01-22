@@ -35,16 +35,14 @@ const Services = () => {
             <div className='content'>
               <h3>Consultation</h3>
               <p>
-                We'll work with you to better undertand what you are looking for
-                and what you need. Walking you through the vast world of
-                technical jargon and concepts. This is where our process of
-                (Learn. Define. Recommend) comes into play. We'll guide your
-                through our process of problem-solving, research, and technical
-                advice to find the right solution for you.
+                We'll guide you through our process of problem-solving,
+                research, and technical advice to land on a solution for your UX
+                challenges.
               </p>
-              <TextLinkButton to='/services/consultation'>
+              <p className='tags'>Research & Analysis, Usability</p>
+              {/* <TextLinkButton to='/services/consultation'>
                 Learn More
-              </TextLinkButton>
+              </TextLinkButton> */}
             </div>
           </ServiceCard>
           <ServiceCard>
@@ -52,16 +50,16 @@ const Services = () => {
               <DesignIcon width={125} />
             </div>
             <div className='content'>
-              <h3>Design</h3>
+              <h3>Digital Design</h3>
               <p>
-                Design isn't just about looking good. The main question should
-                be is it functional, does it have everything your
-                customer/business needs. If you cannot get the results you want
-                because of it, it's not good. We help you get your message
-                across, get the results your business is looking for and take
-                your brand to the next level.
+                Your website should be more than just beautiful, it should be
+                functional. With research and discussion we make sure the design
+                is fully functinol and delivers the results your business wants.
               </p>
-              <TextLinkButton to='/services/design'>Learn More</TextLinkButton>
+              <p className='tags'>
+                User Interface, Information Architecture, Interaction Design
+              </p>
+              {/* <TextLinkButton to='/services/design'>Learn More</TextLinkButton> */}
             </div>
           </ServiceCard>
           <ServiceCard>
@@ -71,16 +69,14 @@ const Services = () => {
             <div className='content'>
               <h3>Development</h3>
               <p>
-                Creating a great website takes a lot of factors into
-                consideration, ease of use, security, reliability, and
-                maintainability. There are many different ways to self manage
-                sites now a days, we can work with you to find what fits you
-                best. Rest assured knowing that we will put the utmost care into
-                crafting a high-quality and performant site.
+                We build solutions, which can be templated or custom, for an
+                optimized, high&#8209;quality, and enjoyable site. These
+                solutions can be self-managed or static.
               </p>
-              <TextLinkButton to='/services/development'>
+              <p className='tags'>JavaScript, Node.js, WordPress, Shopify</p>
+              {/* <TextLinkButton to='/services/development'>
                 Learn More
-              </TextLinkButton>
+              </TextLinkButton> */}
             </div>
           </ServiceCard>
         </Container>

@@ -48,4 +48,11 @@ export const ServiceCard = styled.div`
       margin-bottom: 0.75rem;
     }
   }
+  p {
+    font-size: 1.2rem;
+  }
+  .tags {
+    font-weight: bold;
+    margin-top: 0.5rem;
+  }
 `;
