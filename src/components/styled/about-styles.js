@@ -25,12 +25,34 @@ export const SectionTitle = styled.h2`
 
 export const Sections = styled.div`
   padding-top: 40px;
+  .content {
+    margin-bottom: 50px;
+  }
   .content h3 {
     margin-bottom: 0.75rem;
+    font-size: 1.6rem;
+    span {
+      font-weight: normal;
+      font-size: 1rem;
+      font-family: 'Calluna Sans', sans-serif;
+    }
   }
   .content p {
     font-size: 1.2rem;
     line-height: 1.4;
-    max-width: 82%;
+    @media (min-width: 1024px) {
+      max-width: 82%;
+    }
+  }
+`;
+
+export const MiniNav = styled.div`
+  display: flex;
+  justify-content: space-between;
+  @media (min-width: 1024px) {
+    width: 40%;
+  }
+  a {
+    color: inherit;
   }
 `;

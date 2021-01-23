@@ -7,6 +7,7 @@ import {
   TitleSubtext,
 } from '../components/styled/text-header-styles';
 import {
+  MiniNav,
   Sections,
   SectionTitle,
   TwoColumnGrid,
@@ -29,12 +30,15 @@ const About = () => {
               businesses to take the step to going online, while creating
               performant, beautiful, and user-friendly websites.
             </TitleSubtext>
+            <MiniNav>
+              <a href='#mission'>Mission</a>
+              <a href='#values'>Values</a>
+              <a href='#process'>Process</a>
+            </MiniNav>
           </div>
-          <Sections>
+          <Sections id='mission'>
             <SectionTitle>Our Mission</SectionTitle>
-            <div
-              style={{ maxWidth: '82%', fontSize: '1.2rem', lineHeight: '1.4' }}
-            >
+            <div className='content'>
               <p>
                 We strive to be partners and teachers. Working together to
                 create a solution that best suits your need. Yet, still teaching
@@ -55,7 +59,7 @@ const About = () => {
             src='../desk-topview.jpg'
             alt='gallery layout'
           />
-          <Sections>
+          <Sections id='values'>
             <SectionTitle>Our Values</SectionTitle>
             <TwoColumnGrid>
               <div>
@@ -104,11 +108,13 @@ const About = () => {
             src='../process.jpg'
             alt='Desk Topview'
           />
-          <Sections>
+          <Sections id='process'>
             <SectionTitle>Our Process</SectionTitle>
             <div style={{ marginTop: 60 }}>
               <div className='content'>
-                <h3>Discovery</h3>
+                <h3>
+                  Discovery <span>• Learn about you</span>
+                </h3>
                 <p>
                   The first step in getting started is learning everything about
                   you and your project. You'll answer questions so we can
@@ -118,7 +124,9 @@ const About = () => {
                 </p>
               </div>
               <div className='content'>
-                <h3>Define</h3>
+                <h3>
+                  Define <span>• Figure out the problem and a solution</span>
+                </h3>
                 <p>
                   This is were objectives get fleshed out and we start figuring
                   out specifics. After the discovery session, we'll have a
@@ -129,7 +137,9 @@ const About = () => {
                 </p>
               </div>
               <div className='content'>
-                <h3>Design</h3>
+                <h3>
+                  Design <span>• Create the solution</span>
+                </h3>
                 <p>
                   In this phase the level of complexity will have been figured
                   out in the Define session. With design exploration we can go
@@ -139,7 +149,9 @@ const About = () => {
                 </p>
               </div>
               <div className='content'>
-                <h3>Develop</h3>
+                <h3>
+                  Develop <span>• Build the experience</span>
+                </h3>
                 <p>
                   Using the agreed upon tools and frameworks to build what the
                   project requires. We would have walked through the tools and
